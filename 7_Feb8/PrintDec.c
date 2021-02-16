@@ -5,7 +5,7 @@ void PD() ;
 int main()
 {
     printf("hello\n") ;
-    PD(5) ;
+    PD(4) ;
     printf("bye\n") ;
 
     return 0  ;
@@ -19,8 +19,12 @@ void PD(int n)
         return ;
 
     // work
-    printf("%d\n", n) ;
+    printf("hii %d\n", n) ;
 
     // smaller problem
-    PD(n-1) ;
+    PD(n--) ;
+
+    // work
+    printf("bye %d\n", n) ;
+
 }
